@@ -9,7 +9,13 @@ function App() {
         <section>
           <FoodDropList />
         </section>
-    
+        <section>
+          <div  class="filterText">
+              <input type="text" id="fname" name="fname" />
+              <input type="button" />
+          </div >
+        </section>
+
         <section>
         <RecipiesTable />
         </section>

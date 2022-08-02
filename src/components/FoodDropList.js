@@ -7,7 +7,7 @@ class  FoodDropList extends Component {
    return(
       <div className="container" id="FoodDropList">
         
-        <select id = "myList" onchange = "addIngredient()" >  
+        <select id = "myList" /*onchange = "addIngredient()" */>  
           <option> ---Choose tutorial--- </option>  
           <option> Cebolla </option>  
           <option> Pan </option>  
