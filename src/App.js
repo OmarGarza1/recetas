@@ -1,16 +1,14 @@
-import FoodDropList from "./components/FoodDropList"
 import RecipiesTable from "./components/RecipiesTable"
-
 import './App.css';
+import IngredientsFilter from "./components/IngredientsFilter";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <section>
-          <FoodDropList />
+          <IngredientsFilter />         
         </section>
-
 
         <section>
           <RecipiesTable />
