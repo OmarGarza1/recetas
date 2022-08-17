@@ -1,30 +1,28 @@
 import React from 'react';
-import RecipiesTableRow from './RecipiesTableRow';
+import IngredientsTableRow from './IngredientsTableRow';
 
-const RecipiesTable = ({ data, setDataToEdit, deleteData }) => {
+const IngredientsTable = ({ data, setDataToEdit, deleteData }) => {
     return (
         <div>
-            <h3>Recetas filtradas: </h3>
+            <h3>Ingredientes filtrados: </h3>
             <table>
                 <thead>
                     <tr>
                         <th>Nombre</th>
-                        <th>Instucciones</th>
-                        <th>Ingredientes</th>
-                        <th>País</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     {data.length > 0 ? (
                         data.map(el =>
-                            <RecipiesTableRow
+                            <IngredientsTableRow
                                 key={el.id}
                                 el={el}
                                 setDataToEdit={setDataToEdit}
                                 deleteData={deleteData} />)
                     ) : (
                         <tr>
-                            <td colSpan="4">Sin datos</td>
+                            <td colSpan="2">Sin datos</td>
                         </tr>
                     )}
                 </tbody>
@@ -33,4 +31,4 @@ const RecipiesTable = ({ data, setDataToEdit, deleteData }) => {
     );
 }
 
-export default RecipiesTable;
+export default IngredientsTable;

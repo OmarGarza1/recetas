@@ -1,0 +1,92 @@
+{
+  "Recipies": [
+    {
+      "id": 1,
+      "name": "Huevo con Chorizo",
+      "instructions": "Instrucciones",
+      "ingredients": [
+        "huevo",
+        "chorizo",
+        "pan"
+      ],
+      "country": "Mexico"
+    },
+    {
+      "id": 2,
+      "name": "Pizza",
+      "instructions": "Instrucciones",
+      "ingredients": [
+        "salsa",
+        "queso",
+        "harina",
+        "peperoni"
+      ],
+      "country": "Italia"
+    },
+    {
+      "id": 3,
+      "name": "Hamburgesas",
+      "instructions": "Instrucciones",
+      "ingredients": [
+        "queso",
+        "carne",
+        "pan",
+        "mostaza"
+      ],
+      "country": "USA"
+    },
+    {
+      "id": 4,
+      "name": "Chilaquiles",
+      "instructions": "Instrucciones",
+      "ingredients": [
+        "queso",
+        "pure de tomate",
+        "tortillas"
+      ],
+      "country": "Mexico"
+    }
+  ],
+  "Ingredients": [
+    {
+      "id": 1,
+      "name": "huevo"
+    },
+    {
+      "id": 2,
+      "name": "queso"
+    },
+    {
+      "id": 3,
+      "name": "chorizo"
+    },
+    {
+      "id": 4,
+      "name": "pure de tomate"
+    },
+    {
+      "id": 5,
+      "name": "tortillas"
+    },
+    {
+      "id": 6,
+      "name": "mostaza"
+    },
+    {
+      "id": 7,
+      "name": "pan"
+    },
+    {
+      "id": 8,
+      "name": "carne"
+    },
+    {
+      "id": 9,
+      "name": "harina"
+    },
+    {
+      "id": 10,
+      "name": "peperoni"
+    }
+  ]
+}
