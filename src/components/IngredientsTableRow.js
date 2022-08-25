@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IngredientsTableRow = ({el, setDataToEdit, deleteData}) => {
+const IngredientsTableRow = ({el, setDataToEdit, deleteData, filterData}) => {
     let {name,  id } = el;
     return (
 
@@ -9,6 +9,7 @@ const IngredientsTableRow = ({el, setDataToEdit, deleteData}) => {
                 <td>
                     <button onClick={() => {setDataToEdit(el)}}>Editar</button>
                     <button onClick={() => {deleteData(id, name)}}>Eliminar</button>
+                    <button onClick={() => {filterData(el)}}>Search</button>
                 </td>
             </tr>
 

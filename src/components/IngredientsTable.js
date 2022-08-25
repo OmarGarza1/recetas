@@ -1,7 +1,7 @@
 import React from 'react';
 import IngredientsTableRow from './IngredientsTableRow';
 
-const IngredientsTable = ({ data, setDataToEdit, deleteData }) => {
+const IngredientsTable = ({ data, setDataToEdit, deleteData, filterData }) => {
     return (
         <div>
             <h3>Ingredientes filtrados: </h3>
@@ -19,7 +19,8 @@ const IngredientsTable = ({ data, setDataToEdit, deleteData }) => {
                                 key={el.id}
                                 el={el}
                                 setDataToEdit={setDataToEdit}
-                                deleteData={deleteData} />)
+                                deleteData={deleteData}
+                                filterData={filterData} />)
                     ) : (
                         <tr>
                             <td colSpan="2">Sin datos</td>

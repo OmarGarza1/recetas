@@ -1,7 +1,8 @@
 import React from 'react';
 import RecipiesTableRow from './RecipiesTableRow';
 
-const RecipiesTable = ({ data, setDataToEdit, deleteData }) => {
+const RecipiesTable = ({ data }) => {
+    console.log(data, 20);
     return (
         <div>
             <h3>Recetas filtradas: </h3>
@@ -15,13 +16,12 @@ const RecipiesTable = ({ data, setDataToEdit, deleteData }) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {data.length > 0 ? (
-                        data.map(el =>
+                    {data[0].length > 0 ? (
+                        data[0].map(el =>
                             <RecipiesTableRow
                                 key={el.id}
                                 el={el}
-                                setDataToEdit={setDataToEdit}
-                                deleteData={deleteData} />)
+                               />)
                     ) : (
                         <tr>
                             <td colSpan="4">Sin datos</td>
